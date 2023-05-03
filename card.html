@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olá Tailwind!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mpurple: '#7542f5'
+                    },
+                    fontFamily:{
+                        montserrat: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="flex justify-center items-center h-screen">
+    <main class="flex justify-center items-center bg-gradient-to-tl from-mpurple to-black px-10 py-6 lg:px-30 py-10 gap-6 rounded-xl shadow-2xl">
+        <div>
+            <h1 class="text-5xl lg:text-6xl font-montserrat font-bold text-gray-300">Matheus</h1>
+            <h2 class="text-3xl lg:text-4xl py-2 font-montserrat text-black">Desenvolvedor Front-end</h2>
+            <ul class="flex gap-3">
+                <li class="hover:font-bold hover:text-gray-300"><a href="#">Linkedin</a></li>
+                <li class="hover:font-bold hover:text-gray-300"><a href="#">Email</a></li>
+                <li class="hover:font-bold hover:text-gray-300"><a href="#">Github</a></li>
+              </ul>
+        </div>
+    </main>
+</html>
